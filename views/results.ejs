@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Cook With Me</title>
+  </head>
+  <body>
+    <% recipes.forEach(result => { %>
+    	<div>
+    		<p><%= result.label %></p>
+    		<img src="<%= result.image %>" alt="image of recipe result">
+    		<br />
+    		<p>This recipes will make <%= result.serving %> servings</p>
+    		<a href="<%= result.url %>">Click here to view the recipe</a>
+    	</div>
+    <% }) %>
+  </body>
+</html>
